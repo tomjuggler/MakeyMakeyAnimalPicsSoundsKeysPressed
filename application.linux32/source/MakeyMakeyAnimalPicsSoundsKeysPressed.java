@@ -1,3 +1,21 @@
+import processing.core.*; 
+import processing.data.*; 
+import processing.event.*; 
+import processing.opengl.*; 
+
+import ddf.minim.*; 
+
+import java.util.HashMap; 
+import java.util.ArrayList; 
+import java.io.File; 
+import java.io.BufferedReader; 
+import java.io.PrintWriter; 
+import java.io.InputStream; 
+import java.io.OutputStream; 
+import java.io.IOException; 
+
+public class MakeyMakeyAnimalPicsSoundsKeysPressed extends PApplet {
+
 /**
  * Load and Display 
  * 
@@ -8,7 +26,7 @@
 // The next line is needed if running in JavaScript Mode with Processing.js
 /* @pjs preload="moonwalk.jpg"; */ 
 
-import ddf.minim.*;
+
 
 Minim minim;
 AudioPlayer player;
@@ -23,7 +41,7 @@ PImage img7;
 
 int counter = 0;
 
-void setup() {
+public void setup() {
   //size(1366, 768);
   //size(displayWidth, displayHeight);
   size(1280, 1024);
@@ -40,11 +58,11 @@ void setup() {
   frame.setTitle("Animal Sounds and Pictures");
 }
 
-void draw() {
+public void draw() {
  
 }
 
-void keyPressed () {
+public void keyPressed () {
 //Animal Pics Sounds:
  
   // keyPressed uses the same command as the buttons
@@ -73,7 +91,7 @@ void keyPressed () {
 
 }
 
-void mediaPlayer(PImage imgFile, String song){
+public void mediaPlayer(PImage imgFile, String song){
   image(imgFile, 0, 0, width, height);
     ///play sound here!
     //only works with short sound files else just playing on top of other file. Stop playing before start to sort this out?
@@ -97,3 +115,12 @@ void mediaPlayer(PImage imgFile, String song){
 }
 
 
+  static public void main(String[] passedArgs) {
+    String[] appletArgs = new String[] { "MakeyMakeyAnimalPicsSoundsKeysPressed" };
+    if (passedArgs != null) {
+      PApplet.main(concat(appletArgs, passedArgs));
+    } else {
+      PApplet.main(appletArgs);
+    }
+  }
+}
