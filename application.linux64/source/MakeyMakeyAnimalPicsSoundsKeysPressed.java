@@ -47,7 +47,7 @@ public void setup() {
   size(1280, 1024);
   minim = new Minim(this);
   img1 = loadImage("cat1.jpg");  
-  img2 = loadImage("dog1.jpg");
+  img2 = loadImage("hand.png");
   img3 = loadImage("cow1.jpg");  
   img4 = loadImage("duck1.jpg");
   img5 = loadImage("rooster1.jpg");  
