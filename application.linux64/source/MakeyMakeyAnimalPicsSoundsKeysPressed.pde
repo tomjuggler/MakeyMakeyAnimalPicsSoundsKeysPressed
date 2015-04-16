@@ -53,7 +53,7 @@ void keyPressed () {
       mediaPlayer(img1, "CAT.wav");
       break;
     case 'a':
-      mediaPlayer(img2, "DOG.wav");
+      mediaPlayer(img2, "THUNDER.mp3"); //needs to be hand clap here!
       break;
     case 'g':
       mediaPlayer(img3, "COW.wav");
