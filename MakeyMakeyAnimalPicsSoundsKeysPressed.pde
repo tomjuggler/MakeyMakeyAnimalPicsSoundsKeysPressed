@@ -20,6 +20,7 @@ PImage img4;
 PImage img5;  
 PImage img6;
 PImage img7;
+PImage img8;
 
 int counter = 0;
 
@@ -35,6 +36,7 @@ void setup() {
   img5 = loadImage("rooster1.jpg");  
   img6 = loadImage("sheep1.jpg");
   img7 = loadImage("1.jpg");  
+  img8 = loadImage("dog1.jpg");  
   
   image(img7, 0, 0, width, height); //initial image to load
   frame.setTitle("Animal Sounds and Pictures");
@@ -66,6 +68,9 @@ void keyPressed () {
       break;
     case 's':
       mediaPlayer(img6, "GOAT.wav");
+      break;
+    case 'e':
+      mediaPlayer(img8, "DOG.wav");
       break;
     
   
